@@ -3,8 +3,9 @@ package com.example.backend.model;
 public class UserModel {
 
     private Long id;
-    private String username;
-    private boolean active;
+    private String email;
+    private String password;
+    private Boolean isDeleted;
 
     // Constructors
     public UserModel() {}
