@@ -12,46 +12,39 @@ public class UserEntity {
     private Long id;
 
     @Column(nullable = false, unique = true)
-    private String username;
+    private String email;
 
     @Column(nullable = false)
     private String password;
 
     @Column(nullable = false)
-    private boolean active;
+    private Boolean isDeleted = false;
 
-    @Column(nullable = false)
-    private String roles;
-
-    @Column(nullable = false)
-    private String email; 
-
-    @Column(nullable = false)
+    @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
+
+    @Column(nullable = false)
+    private LocalDateTime updatedAt;
 
     @PrePersist
     protected void onCreate() {
-        this.createdAt = LocalDateTime.now();
+        createdAt = LocalDateTime.now();
+        updatedAt = LocalDateTime.now();
     }
 
-    // Getters and setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    @PreUpdate
+    protected void onUpdate() {
+        updatedAt = LocalDateTime.now();
+    }
 
-    public String getUsername() { return username; }
-    public void setUsername(String username) { this.username = username; }
+    // Getters and Setters
 
-    public String getPassword() { return password; }
-    public void setPassword(String password) { this.password = password; }
+    // Constructor with no args
+    public UserEntity() {}
 
-    public boolean isActive() { return active; }
-    public void setActive(boolean active) { this.active = active; }
-
-    public String getRoles() { return roles; }
-    public void setRoles(String roles) { this.roles = roles; }
-
-    public String getEmail() { return email; }
-    public void setEmail(String email) { this.email = email; }
-
-    public LocalDateTime getCreatedAt() { return createdAt; }
+    // Constructor with args
+    public UserEntity(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
 }
