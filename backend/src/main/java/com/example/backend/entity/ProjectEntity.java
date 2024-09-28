@@ -34,9 +34,10 @@ public class ProjectEntity {
     }
 
     // Constructor with args
-    public ProjectEntity(String title, String description) {
+    public ProjectEntity(String title, String description, UserEntity user) {
         this.title = title;
         this.description = description;
+        this.user = user;
     }
 
     @PrePersist
