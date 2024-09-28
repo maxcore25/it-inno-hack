@@ -31,3 +31,10 @@ http://localhost:8080/swagger-ui.html
 Frontend:
 
 http://localhost:3000
+
+## Prod (Docker Compose)
+
+```bash
+docker-compose up -d --build
+docker-compose down
+```

@@ -4,3 +4,4 @@ export * from './ProfileLayout';
 export * from './ProjectsLayout';
 export * from './ProjectLayout';
 export * from './StatsLayout';
+export * from './KnowledgeBaseLayout';

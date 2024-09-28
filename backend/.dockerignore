@@ -1,0 +1,42 @@
+# Maven build output
+target/
+
+# local environment files
+.env
+*.env
+
+# IntelliJ IDEA project files
+*.iml
+.idea/
+
+# Eclipse project files
+.project
+.classpath
+.settings/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+logs/
+
+# temp files
+*.tmp
+*.swp
+
+# build-related files
+.mvn/
+pom.xml.*
+
+# Git-related files
+.git/
+.gitignore
+
+# test outputs
+test-output/
+
+# build artifacts
+build/
+dist/
