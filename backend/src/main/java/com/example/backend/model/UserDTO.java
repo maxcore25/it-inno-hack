@@ -1,22 +1,13 @@
 package com.example.backend.model;
 
-public class UserModel {
+public class UserDTO {
 
     private Long id;
     private String email;
     private String password;
     private Boolean isDeleted;
 
-    // Constructors
-    public UserModel() {}
-
-    public UserModel(Long id, String email, boolean isDeleted) {
-        this.id = id;
-        this.email = email;
-        this.isDeleted = isDeleted;
-    }
-
-    // Getters and setters
+    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -41,11 +32,11 @@ public class UserModel {
         this.password = password;
     }
 
-    public Boolean getDeleted() {
+    public Boolean getIsDeleted() {
         return isDeleted;
     }
 
-    public void setDeleted(Boolean deleted) {
+    public void setIsDeleted(Boolean deleted) {
         isDeleted = deleted;
     }
 }
