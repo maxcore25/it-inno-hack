@@ -20,4 +20,4 @@
 
 ERD
 
-![](/docs/img/)
+![](/docs/img/erd.png)
