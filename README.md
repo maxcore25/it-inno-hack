@@ -22,8 +22,12 @@ ERD
 
 ![](/docs/img/erd.png)
 
-## Dev
+## Dev (localhost)
 
 Swagger API:
 
 http://localhost:8080/swagger-ui.html
+
+Frontend:
+
+http://localhost:3000
