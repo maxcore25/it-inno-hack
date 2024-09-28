@@ -8,3 +8,4 @@ export * from './KnowledgeBaseLayout';
 export * from './CalendarLayout';
 export * from './DocsLayout';
 export * from './SettingsLayout';
+export * from './RoadmapLayout';
