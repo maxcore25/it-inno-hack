@@ -10,6 +10,7 @@ import { useProjectQuery } from '@/hooks';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { KanbanBoard } from '@/components/temp3/KanbanBoard';
+import { ShareDialog } from '@/components/modules/dialogs';
 
 export const ProjectLayout = () => {
   const router = useRouter();
@@ -30,6 +31,7 @@ export const ProjectLayout = () => {
               <h1 className='text-lg font-semibold md:text-2xl'>
                 {project?.name}
               </h1>
+              <ShareDialog />
             </div>
 
             <KanbanBoard />
