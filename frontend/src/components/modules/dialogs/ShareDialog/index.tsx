@@ -24,7 +24,7 @@ export const ShareDialog = () => {
           </DialogDescription>
         </DialogHeader>
         <div className='flex gap-3 py-4'>
-          <Input id='email' defaultValue='@peduarte' className='' />
+          <Input id='email' placeholder='Email' className='' />
           <Button type='submit'>Поделиться</Button>
         </div>
         <div className='grid gap-2'>
