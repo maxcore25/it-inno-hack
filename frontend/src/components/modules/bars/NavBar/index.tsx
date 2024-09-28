@@ -4,9 +4,10 @@ import {
   BookmarkCheck,
   HomeIcon,
   LineChartIcon,
-  PanelsTopLeft,
+  GraduationCap,
   Settings,
   UsersIcon,
+  Book,
 } from 'lucide-react';
 import { BellIcon } from '@/components/elements/icons';
 
@@ -64,6 +65,20 @@ export const NavBar = () => {
             >
               <Settings className='h-4 w-4' />
               Настройки
+            </Link>
+            <Link
+              className='flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted hover:text-primary'
+              href='/kb'
+            >
+              <GraduationCap className='h-4 w-4' />
+              База знаний
+            </Link>
+            <Link
+              className='flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted hover:text-primary'
+              href='/docs'
+            >
+              <Book className='h-4 w-4' />
+              Документация
             </Link>
           </nav>
         </div>
