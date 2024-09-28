@@ -5,3 +5,6 @@ export * from './ProjectsLayout';
 export * from './ProjectLayout';
 export * from './StatsLayout';
 export * from './KnowledgeBaseLayout';
+export * from './CalendarLayout';
+export * from './DocsLayout';
+export * from './SettingsLayout';
