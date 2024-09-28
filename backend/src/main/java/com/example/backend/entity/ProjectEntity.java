@@ -1,7 +1,6 @@
 package com.example.backend.entity;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
 @Entity
@@ -28,6 +27,16 @@ public class ProjectEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false)
     private UserEntity user;
+
+    // Constructor with no args
+    public ProjectEntity() {
+    }
+
+    // Constructor with args
+    public ProjectEntity(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
 
     @PrePersist
     protected void onCreate() {
