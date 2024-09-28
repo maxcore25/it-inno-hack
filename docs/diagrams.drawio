@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 YaBrowser/24.7.0.0 Safari/537.36" version="24.7.16">
   <diagram name="Страница — 1" id="vkxFKJKyc0zUHM9U_JR2">
-    <mxGraphModel dx="368" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="162" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -165,7 +165,7 @@
         <mxCell id="jraofJ7God-ZCcmwj-nA-71" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="jraofJ7God-ZCcmwj-nA-1">
           <mxGeometry y="113" width="152" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="jraofJ7God-ZCcmwj-nA-72" value="password" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" vertex="1" parent="jraofJ7God-ZCcmwj-nA-71">
+        <mxCell id="jraofJ7God-ZCcmwj-nA-72" value="is_deleted" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=2;overflow=hidden;fontSize=11;" vertex="1" parent="jraofJ7God-ZCcmwj-nA-71">
           <mxGeometry width="60" height="22" as="geometry">
             <mxRectangle width="60" height="22" as="alternateBounds" />
           </mxGeometry>
@@ -420,6 +420,31 @@
             <Array as="points" />
             <mxPoint x="1041" y="468" as="sourcePoint" />
             <mxPoint x="1096" y="534" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraofJ7God-ZCcmwj-nA-74" value="Telegram bot" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jraofJ7God-ZCcmwj-nA-75" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Z2fzCA3-U0zMWtPHDmmj-20" target="jraofJ7God-ZCcmwj-nA-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1241" y="140" as="sourcePoint" />
+            <mxPoint x="1328" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraofJ7God-ZCcmwj-nA-76" value="Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jraofJ7God-ZCcmwj-nA-75">
+          <mxGeometry x="0.015" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraofJ7God-ZCcmwj-nA-77" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jraofJ7God-ZCcmwj-nA-74" target="Z2fzCA3-U0zMWtPHDmmj-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="130" as="sourcePoint" />
+            <mxPoint x="1330" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jraofJ7God-ZCcmwj-nA-78" value="Response" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jraofJ7God-ZCcmwj-nA-77">
+          <mxGeometry x="0.0477" y="1" relative="1" as="geometry">
+            <mxPoint x="6" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
