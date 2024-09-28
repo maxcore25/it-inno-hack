@@ -1,6 +1,11 @@
 import Head from 'next/head';
 import { LogoHeader } from '@/components/modules/headers/LogoHeader';
-import { AreaChartDemo, PieChartDemo } from '@/components/modules/charts';
+import {
+  AreaChartDemo,
+  BarChartDemo,
+  PieChartDemo,
+  RadialChartDemo,
+} from '@/components/modules/charts';
 
 export const StatsLayout = () => {
   return (
@@ -18,6 +23,8 @@ export const StatsLayout = () => {
         <div className='grid grid-cols-2 gap-4'>
           <PieChartDemo />
           <AreaChartDemo />
+          <BarChartDemo />
+          <RadialChartDemo />
         </div>
       </main>
     </>
