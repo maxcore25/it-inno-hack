@@ -6,10 +6,27 @@ public class ProjectDTO {
     private String title;
     private String description;
     private Boolean isDeleted;
+    private Long userId;
 
     // Getters and Setters
     public Long getId() {
         return id;
+    }
+
+    public Boolean getDeleted() {
+        return isDeleted;
+    }
+
+    public void setDeleted(Boolean deleted) {
+        isDeleted = deleted;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
     public void setId(Long id) {
