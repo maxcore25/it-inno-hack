@@ -1,9 +1,11 @@
 package com.example.backend.service;
 
 import com.example.backend.entity.ProjectEntity;
+import com.example.backend.entity.UserEntity;
 import com.example.backend.model.ProjectDTO;
 import com.example.backend.model.ProjectCreateDTO;
 import com.example.backend.repository.ProjectRepository;
+import com.example.backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,13 +15,18 @@ import java.util.stream.Collectors;
 public class ProjectService {
 
     private final ProjectRepository projectRepository;
+    private final UserRepository userRepository;
 
-    public ProjectService(ProjectRepository projectRepository) {
+    public ProjectService(ProjectRepository projectRepository, UserRepository userRepository) {
         this.projectRepository = projectRepository;
+        this.userRepository = userRepository;
     }
 
     public ProjectDTO createProject(ProjectCreateDTO projectCreateDTO) {
-        ProjectEntity newProject = new ProjectEntity(projectCreateDTO.getTitle(), projectCreateDTO.getDescription());
+        UserEntity user = userRepository.findById(projectCreateDTO.getUserId())
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        ProjectEntity newProject = new ProjectEntity(projectCreateDTO.getTitle(), projectCreateDTO.getDescription(), user);
         ProjectEntity savedProject = projectRepository.save(newProject);
         return mapToDTO(savedProject);
     }
@@ -40,8 +47,12 @@ public class ProjectService {
         ProjectEntity existingProject = projectRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Project not found"));
 
+        UserEntity user = userRepository.findById(projectDTO.getUserId())
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
         existingProject.setTitle(projectDTO.getTitle());
         existingProject.setDescription(projectDTO.getDescription());
+        existingProject.setUser(user);
         existingProject.setIsDeleted(projectDTO.getIsDeleted());
 
         ProjectEntity updatedProject = projectRepository.save(existingProject);
@@ -60,6 +71,7 @@ public class ProjectService {
         projectDTO.setId(projectEntity.getId());
         projectDTO.setTitle(projectEntity.getTitle());
         projectDTO.setDescription(projectEntity.getDescription());
+        projectDTO.setUserId(projectEntity.getUser().getId());
         projectDTO.setIsDeleted(projectEntity.getIsDeleted());
         return projectDTO;
     }
