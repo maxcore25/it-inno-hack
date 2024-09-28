@@ -61,7 +61,7 @@ coverage/
 # Ignore miscellaneous files
 README.md
 *.local
-*.lock
+# *.lock
 *.log
 
 # Ignore cache directories
