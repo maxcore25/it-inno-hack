@@ -6,3 +6,4 @@ export * from './ProjectLayout';
 export * from './StatsLayout';
 export * from './KnowledgeBaseLayout';
 export * from './DocsLayout';
+export * from './SettingsLayout';
