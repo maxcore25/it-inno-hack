@@ -316,7 +316,7 @@ export function RoadmapLayout() {
                   <CardHeader>
                     <CardTitle>Progress</CardTitle>
                     <CardDescription>
-                      You're average more steps a day this year than last year.
+                      You are average more steps a day this year than last year.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className='grid gap-4'>
@@ -737,7 +737,7 @@ export function RoadmapLayout() {
                   <CardHeader className='p-4 pb-0'>
                     <CardTitle>Active Energy</CardTitle>
                     <CardDescription>
-                      You're burning an average of 754 calories per day. Good
+                      You are burning an average of 754 calories per day. Good
                       job!
                     </CardDescription>
                   </CardHeader>
