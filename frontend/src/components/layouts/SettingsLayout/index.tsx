@@ -17,7 +17,7 @@ export function SettingsLayout() {
   return (
     <>
       <Head>
-        <title>База знаний</title>
+        <title>Настройки</title>
       </Head>
       <div className='grid min-h-screen w-full md:grid-cols-[220px_1fr]'>
         <NavBar />
