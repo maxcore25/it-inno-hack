@@ -10,6 +10,7 @@ import {
   Book,
   CalendarDays,
   Target,
+  ChartGantt,
 } from 'lucide-react';
 import { BellIcon } from '@/components/elements/icons';
 
@@ -95,6 +96,13 @@ export const NavBar = () => {
             >
               <Target className='h-4 w-4' />
               Roadmap
+            </Link>
+            <Link
+              className='flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted hover:text-primary'
+              href='/gantt'
+            >
+              <ChartGantt className='h-4 w-4' />
+              Диаграмма Ганта
             </Link>
           </nav>
         </div>

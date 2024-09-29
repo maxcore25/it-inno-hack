@@ -23,7 +23,7 @@ export const StatsLayout = () => {
           <main className='mt-[20px] flex min-h-screen flex-col bg-background'>
             <div className='theme-zinc flex w-full items-center justify-center px-4'>
               <h1 className='mb-[60px] text-lg font-semibold md:text-2xl'>
-                Statistics
+                Статистика
               </h1>
             </div>
             <div className='grid grid-cols-2 gap-4'>
