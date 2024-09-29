@@ -32,39 +32,20 @@ services:
     depends_on:
       - db
 
-  backend:
-    container_name: backend
-    build:
-      context: ./backend
-    restart: unless-stopped
-    depends_on:
-      db:
-        condition: service_healthy
-    volumes:
-      - ./backend:/app
-    ports:
-      # - '${BACKEND_PORT}:${BACKEND_PORT}'
-      - '8080:8080'
-
-    # environment:
-    #   DEBUG: ${DEBUG}
-
-    #   BACKEND_HOST: ${BACKEND_HOST}
-    #   BACKEND_PORT: ${BACKEND_PORT}
-    #   BACKEND_RELOAD: ${BACKEND_RELOAD}
-
-    #   BACKEND_JWT_SECRET: ${BACKEND_JWT_SECRET}
-    #   BACKEND_JWT_ALGORITHM: ${BACKEND_JWT_ALGORITHM}
-    #   BACKEND_JWT_ACCESS_TOKEN_EXPIRE_MINUTES: ${BACKEND_JWT_ACCESS_TOKEN_EXPIRE_MINUTES}
-
-    #   POSTGRES_SERVER: ${POSTGRES_SERVER}
-    #   POSTGRES_USER: ${POSTGRES_USER}
-    #   POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-    #   POSTGRES_DB: ${POSTGRES_DB}
-
-    #   ENV: development
-    networks:
-      - default
+  # backend:
+  #   container_name: backend
+  #   build:
+  #     context: ./backend
+  #   restart: unless-stopped
+  #   depends_on:
+  #     db:
+  #       condition: service_healthy
+  #   volumes:
+  #     - ./backend:/app
+  #   ports:
+  #     - '8080:8080'
+  #   networks:
+  #     - default
 
   frontend:
     container_name: frontend
