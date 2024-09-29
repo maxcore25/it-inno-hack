@@ -8,8 +8,8 @@ services:
     volumes:
       - db-volume:/var/lib/postgresql/data/
     environment:
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: it_inno_hack_db
     ports:
       - '5432:5432'
     healthcheck:
@@ -23,8 +23,8 @@ services:
     image: dpage/pgadmin4
     restart: unless-stopped
     environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+      PGADMIN_DEFAULT_EMAIL: admin@mail.r
+      PGADMIN_DEFAULT_PASSWORD: 123
     ports:
       - '5050:80'
     volumes:
@@ -43,7 +43,6 @@ services:
     volumes:
       - ./backend:/app
     ports:
-      # - '${BACKEND_PORT}:${BACKEND_PORT}'
       - '8080:8080'
 
     # environment:
