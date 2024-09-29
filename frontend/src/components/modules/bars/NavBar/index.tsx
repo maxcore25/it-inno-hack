@@ -12,6 +12,7 @@ import {
   Target,
   ChartGantt,
   MessageCircleMore,
+  SquareCheck,
 } from 'lucide-react';
 import { BellIcon } from '@/components/elements/icons';
 
@@ -116,8 +117,8 @@ export const NavBar = () => {
               className='flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted hover:text-primary'
               href='/task'
             >
-              <MessageCircleMore className='h-4 w-4' />
-              Задачи
+              <SquareCheck className='h-4 w-4' />
+              Задача
             </Link>
           </nav>
         </div>
