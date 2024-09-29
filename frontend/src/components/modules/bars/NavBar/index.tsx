@@ -50,7 +50,7 @@ export const NavBar = () => {
 
             <Link
               className='flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted hover:text-primary'
-              href='#'
+              href='/users'
             >
               <UsersIcon className='h-4 w-4' />
               Участники
@@ -103,6 +103,13 @@ export const NavBar = () => {
             >
               <ChartGantt className='h-4 w-4' />
               Диаграмма Ганта
+            </Link>
+            <Link
+              className='flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted hover:text-primary'
+              href='/feedback'
+            >
+              <ChartGantt className='h-4 w-4' />
+              Отзывы
             </Link>
           </nav>
         </div>

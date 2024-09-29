@@ -9,7 +9,7 @@ export function UsersLayout() {
   return (
     <>
       <Head>
-        <title>База знаний</title>
+        <title>Участники</title>
       </Head>
       <div className='grid min-h-screen w-full md:grid-cols-[220px_1fr]'>
         <NavBar />
@@ -18,7 +18,7 @@ export function UsersLayout() {
           <main className='flex flex-1 flex-col gap-4 overflow-x-auto bg-muted p-4 lg:gap-6 lg:p-6'>
             <Card>
               <CardHeader>
-                <CardTitle>Recent Sales</CardTitle>
+                <CardTitle>Участники</CardTitle>
               </CardHeader>
               <CardContent className='grid gap-8'>
                 <div className='flex items-center gap-4'>
@@ -34,7 +34,6 @@ export function UsersLayout() {
                       olivia.martin@email.com
                     </p>
                   </div>
-                  <div className='ml-auto font-medium'>+$1,999.00</div>
                 </div>
                 <div className='flex items-center gap-4'>
                   <Avatar className='hidden h-9 w-9 sm:flex'>
@@ -49,7 +48,6 @@ export function UsersLayout() {
                       jackson.lee@email.com
                     </p>
                   </div>
-                  <div className='ml-auto font-medium'>+$39.00</div>
                 </div>
                 <div className='flex items-center gap-4'>
                   <Avatar className='hidden h-9 w-9 sm:flex'>
@@ -64,7 +62,6 @@ export function UsersLayout() {
                       isabella.nguyen@email.com
                     </p>
                   </div>
-                  <div className='ml-auto font-medium'>+$299.00</div>
                 </div>
                 <div className='flex items-center gap-4'>
                   <Avatar className='hidden h-9 w-9 sm:flex'>
@@ -79,7 +76,6 @@ export function UsersLayout() {
                       will@email.com
                     </p>
                   </div>
-                  <div className='ml-auto font-medium'>+$99.00</div>
                 </div>
                 <div className='flex items-center gap-4'>
                   <Avatar className='hidden h-9 w-9 sm:flex'>
@@ -94,7 +90,6 @@ export function UsersLayout() {
                       sofia.davis@email.com
                     </p>
                   </div>
-                  <div className='ml-auto font-medium'>+$39.00</div>
                 </div>
               </CardContent>
             </Card>
