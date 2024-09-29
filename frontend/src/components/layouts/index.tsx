@@ -11,3 +11,4 @@ export * from './SettingsLayout';
 export * from './RoadmapLayout';
 export * from './GanttLayout';
 export * from './UsersLayout';
+export * from './FeedbackLayout';
